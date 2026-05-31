@@ -8,6 +8,10 @@
 
 ## 📋 Sobre o Projeto
 
+### 🤖 Desenvolvimento Assistido por IA
+
+Este projeto contou com o apoio de Large Language Models (LLMs) para acelerar tarefas de desenvolvimento, documentação e pesquisa, mantendo a definição da arquitetura, implementação e validação final sob responsabilidade do desenvolvedor.
+
 **FocusStudy** é uma aplicação completa de gerenciamento de estudos desenvolvida como desafio técnico Full Stack. A aplicação permite que usuários:
 
 - ✅ Registrem horas de estudo por matéria
@@ -38,26 +42,47 @@
 ## 🏗️ Arquitetura do Projeto
 
 ─────────────────────────────────────────────────────────────┐
+
 │ Frontend Web (React/Next.js) │
+
 │ http://localhost:3000 │
+
 └─────────────────────────────────────────────────────────────┘
+
 │
+
 ▼
+
 ┌─────────────────────────────────────────────────────────────┐
+
 │ API Gateway (Django Ninja) │
+
 │ http://localhost:8000 │
+
 └─────────────────────────────────────────────────────────────┘
+
 │
+
 ▼
+
 ┌─────────────────────────────────────────────────────────────┐
+
 │ PostgreSQL Database │
+
 │ Database: focus_study │
+
 └─────────────────────────────────────────────────────────────┘
+
 ▲
+
 │
+
 ┌─────────────────────────────────────────────────────────────┐
+
 │ Mobile (Flutter) │
+
 │ iOS + Android │
+
 └─────────────────────────────────────────────────────────────┘
 
 
@@ -76,37 +101,68 @@
 
 ## 📁 Estrutura do Projeto
 focusstudy/
+
 │
 ├── backend/ # Backend Django + Django Ninja
+
 │ ├── manage.py
+
 │ ├── requirements.txt
+
 │ ├── .env
+
 │ └── apps/
+
 │ ├── api/
+
 │ │ └── api.py # Endpoints da API
+
 │ └── core/
+
 │ └── models.py # Modelos de dados
+
 │
+
 ├── frontend-web/ # Frontend React/Next.js
+
 │ ├── package.json
+
 │ ├── tailwind.config.js
+
 │ └── src/
+
 │ ├── app/ # Pages (App Router)
+
 │ ├── components/ # Componentes reutilizáveis
+
 │ └── lib/ # Utilitários e API
+
 │
+
 ├── mobile/ # App Flutter
+
 │ ├── pubspec.yaml
+
 │ └── lib/
+
 │ ├── screens/ # Telas do app
+
 │ ├── models/ # Modelos de dados
+
 │ ├── services/ # Conexão com API
+
 │ └── widgets/ # Componentes reutilizáveis
+
 │
+
 ├── docs/ # Documentação
+
 │ ├── prd.md # Product Requirements Document
+
 │ └── tech-specs.md # Technical Specifications
+
 │
+
 └── README.md # Este arquivo
 
 
